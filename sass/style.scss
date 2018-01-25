@@ -25,7 +25,7 @@ body {margin: 0 auto;}
 .column-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;  
+  flex-wrap: wrap;  
 }
 
 .create-column {

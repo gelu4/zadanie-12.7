@@ -2,6 +2,7 @@ var board = {
   name: 'Tablica Kanban',
   createColumn: function(column) {
     this.element.append(column.element);
+	  initSortable();
   },
   element: $('#board .column-container')
 };
@@ -9,9 +10,6 @@ var board = {
 $('.create-column')
   .click(function() {
     var columnName = prompt('Enter a column name');
-    if (columnName == '') {
-      columnName = 'default name'
-    }
     if (columnName) {
       $.ajax({
         url: baseUrl + '/column',
@@ -22,8 +20,17 @@ $('.create-column')
         success: function(response) {
           var column = new Column(response.id, columnName);
           board.createColumn(column);
-        }
+        },
+		  error: function(response){
+		alert('ERROR!!! Cos Nie Zadziałało')
+	}
       });
     }
   });
+ function initSortable() {
+    $('.card-list').sortable({
+      connectWith: '.card-list',
+      placeholder: 'card-placeholder'
+    }).disableSelection();
+  }
 

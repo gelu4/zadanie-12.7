@@ -23,24 +23,16 @@ body {
   argin-left: 8px;
 }*/
 .column-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .create-column {
   margin-bottom: 15px; }
 
 /* COLUMN */
 .column {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
   min-width: 300px;
   min-height: 50vh;
   background-color: lightgrey;
@@ -79,3 +71,5 @@ body {
   margin-bottom: 5px;
   border: 2px solid lightgrey;
   background-color: lightblue; }
+
+/*# sourceMappingURL=style.css.map */
