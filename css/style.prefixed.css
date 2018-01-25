@@ -9,6 +9,7 @@ body {
   min-height: 80px; }
 
 .btn-delete {
+  box-shadow: -3px 3px 6px black;
   position: absolute;
   right: 0;
   top: 0;
@@ -19,9 +20,12 @@ body {
   color: white; }
 
 /* BOARD */
-/*.board h1 {
-  argin-left: 8px;
-}*/
+body {
+  background-color: lightgray; }
+
+.board h1 {
+  margin-left: 8px; }
+
 .column-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,28 +38,34 @@ body {
       flex-wrap: wrap; }
 
 .create-column {
-  margin-bottom: 15px; }
+  box-shadow: 0 0 6px black;
+  background-color: lightblue;
+  margin-bottom: 15px;
+  height: 35px;
+  width: auto; }
 
 /* COLUMN */
 .column {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  box-shadow: 3px 3px 6px black;
   min-width: 300px;
   min-height: 50vh;
-  background-color: lightgrey;
+  background-color: cornflowerblue;
   margin: 0 auto;
   list-style: none;
   position: relative; }
 
 .column-add-card {
+  box-shadow: 3px 3px 6px black;
+  background-color: lightblue;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 5px 8px;
   display: block; }
 
 /* STYLE KARTY */
 .card {
+  background-color: lightgrey;
+  box-shadow: 3px 3px 6px black;
   box-sizing: border-box;
   display: block;
   height: 60px;
@@ -79,5 +89,3 @@ body {
   margin-bottom: 5px;
   border: 2px solid lightgrey;
   background-color: lightblue; }
-
-/*# sourceMappingURL=style.prefixed.css.map */

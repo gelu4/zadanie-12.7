@@ -22,7 +22,7 @@ $('.create-column')
           board.createColumn(column);
         },
 		  error: function(response){
-		alert('ERROR!!! Cos Nie Zadziałało')
+		alert('BŁĄD!!! Coś Nie Zadziałało');
 	}
       });
     }

@@ -1,79 +1,107 @@
-body {margin: 0 auto;}
-* {box-sizing: border-box;
+body {
+	margin: 0 auto;
+}
+
+* {
+	box-sizing: border-box;
 	text-align: center;
-  }
+}
 
 .ui-sortable {
-  min-height: 80px;
+	min-height: 80px;
 }
+
 .btn-delete {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 22px;
-  height: 22px;
-  border: 0;
-  background-color: rgba(0,0,0,0.4);
-  color: white;
+	box-shadow: -3px 3px 6px black;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 22px;
+	height: 22px;
+	border: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
 }
+
 /* BOARD */
 
-/*.board h1 {
-  argin-left: 8px;
-}*/
+$btn-add-color: lightblue;
+
+body {
+	background-color: lightgray;
+}
+
+.board h1 {
+	margin-left: 8px;
+}
 
 .column-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;  
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .create-column {
+	box-shadow: 0 0 6px black;
+	background-color: $btn-add-color;
 	margin-bottom: 15px;
+	height: 35px;
+	width: auto;
 }
 
 
 /* COLUMN */
+
+$shadow: 3px 3px 6px black;
+
 .column {
-  order: 1;
-  min-width: 300px;
-  min-height: 50vh;
-  background-color: lightgrey;
-  margin: 0 auto;;
-  list-style: none;
-  position: relative;
+	box-shadow: $shadow;
+	min-width: 300px;
+	min-height: 50vh;
+	background-color: cornflowerblue;
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
 }
+
 .column-add-card {
-  cursor: pointer;
-  text-decoration: underline;
-  margin: 5px 8px;
-  
+	box-shadow: $shadow;
+	background-color: $btn-add-color;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 5px 8px;
 	display: block;
 }
 
 /* STYLE KARTY */
+
 .card {
-  box-sizing: border-box;
-  display: block;
-  height: 60px;
-  margin-bottom: 5px;
-  padding: 4px;
-  overflow: hidden;
-  position: relative;
+	background-color: lightgrey;
+	box-shadow: $shadow;
+	box-sizing: border-box;
+	display: block;
+	height: 60px;
+	margin-bottom: 5px;
+	padding: 4px;
+	overflow: hidden;
+	position: relative;
 }
+
 .card-list {
-  list-style: none;
-  margin: 5px;
-  padding: 0px;
+	list-style: none;
+	margin: 5px;
+	padding: 0px;
 }
+
 .card-description {
-  margin: 2px 0;
+	margin: 2px 0;
 }
+
 .card-placeholder {
-  box-sizing: border-box;
-  display: block;
-  height: 60px;
-  margin-bottom: 5px;
-  border: 2px solid lightgrey;
-  background-color: lightblue;
+	box-sizing: border-box;
+	display: block;
+	height: 60px;
+	margin-bottom: 5px;
+	border: 2px solid lightgrey;
+	background-color: lightblue;
 }
